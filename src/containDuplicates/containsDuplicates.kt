@@ -1,5 +1,7 @@
 package containDuplicates
 
+import kotlin.reflect.typeOf
+
 /**
  * 217. Contains Duplicates
  * Given an array of integers, find if the array contains any duplicates.
@@ -23,6 +25,9 @@ fun main() {
     val list = intArrayOf(1,1,1,3,3,4,3,2,4,2) // true
     val list2 = intArrayOf(1,2,3,4) // false
     val list3 = intArrayOf(1,2,3,1) // true
+    val list4 = listOf(1,2,3,1) // List<Int>
+    val list5 = arrayListOf(1,2,3,1) // ArrayList<Int>
+
 
     println(containsDuplicates(list))
     println(containsDuplicates(list2))
