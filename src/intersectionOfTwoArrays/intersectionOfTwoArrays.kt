@@ -22,9 +22,29 @@ package intersectionOfTwoArrays
  */
 
 fun main() {
+    val nums1 = intArrayOf(4,9,5)
+    val nums2 = intArrayOf(9,4,9,8,4)
 
+    intersectionOfTwoArrays(nums1, nums2).forEach{println(it)}
 }
 
-fun intersectionOfTwoArrays() {
-    
+fun intersectionOfTwoArrays(nums1: IntArray, nums2: IntArray): IntArray {
+    var map = hashMapOf<Int, Int>()
+    var result = mutableListOf<Int>()
+    for(num in nums1) {
+        map[num] = map.getOrDefault(num, 0) + 1
+    }
+
+    for(value in nums2) {
+        if(map.containsKey(value) && map[value]!! > 0) {
+            result.add(value)
+            map[value]?.minus(1)?.let { map.put(value, it) }
+        }
+    }
+
+    var finalResult = IntArray(result.size)
+    for((i, v) in result.withIndex()) {
+        finalResult[i] = v
+    }
+    return finalResult
 }

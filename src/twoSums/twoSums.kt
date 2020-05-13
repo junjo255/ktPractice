@@ -27,7 +27,7 @@ fun twoSums(nums: Array<Int>, target: Int): IntArray {
 
             return intArrayOf(valIndex, ind)
         }
-        map.put(nums[ind], ind)
+        map[nums[ind]] = ind
     }
     throw IllegalArgumentException("No two sum solution")
 }
