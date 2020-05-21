@@ -1,5 +1,7 @@
 package main.Arrays.rotateImage;
 
+import static java.util.Arrays.stream;
+
 public class rotateImage {
     public static void main(String[] args) {
         int[][] matrix = new int[][] {
@@ -15,6 +17,9 @@ public class rotateImage {
         //            [12, 6, 8, 9],
         //            [16, 7,10,11]
         //            ]
+
+        stream(rotate(matrix)).forEach(val -> stream(val).forEach(v -> System.out.println(v)));
+
     }
 
     public static int[][] rotate(int[][] matrix) {
@@ -24,7 +29,6 @@ public class rotateImage {
             for (int row = 0; row < length ; row++) {
                 int temp = matrix[row][col];
                 matrix[row][col] = matrix[length - row - 1][col];
-
                 matrix[length - row - 1][col] = temp;
             }
         }
