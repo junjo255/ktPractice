@@ -1,4 +1,4 @@
-package Arrays.removeDuplicatesFromSortedArray;
+package main.Arrays.removeDuplicatesFromSortedArray;
 
 public class removeDuplicatesFromSortedArray {
     public static void main(String[] args) {

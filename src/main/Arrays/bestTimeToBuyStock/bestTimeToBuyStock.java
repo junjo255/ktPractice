@@ -1,4 +1,4 @@
-package Arrays.bestTimeToBuyStock;
+package main.Arrays.bestTimeToBuyStock;
 
 public class bestTimeToBuyStock {
     public static void main(String[] args) {

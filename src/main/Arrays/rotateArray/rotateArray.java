@@ -1,4 +1,4 @@
-package Arrays.rotateArray;
+package main.Arrays.rotateArray;
 
 import java.util.ArrayList;
 import java.util.List;

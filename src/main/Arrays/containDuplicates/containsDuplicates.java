@@ -1,4 +1,4 @@
-package Arrays.containDuplicates;
+package main.Arrays.containDuplicates;
 
 import java.util.HashSet;
 import java.util.Set;

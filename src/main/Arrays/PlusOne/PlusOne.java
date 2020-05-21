@@ -1,4 +1,4 @@
-package Arrays.PlusOne;
+package main.Arrays.PlusOne;
 
 import java.util.Arrays;
 import java.util.List;

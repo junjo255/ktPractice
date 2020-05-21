@@ -1,4 +1,4 @@
-package Arrays.moveZeroes;
+package main.Arrays.moveZeroes;
 
 import static java.util.Arrays.stream;
 
